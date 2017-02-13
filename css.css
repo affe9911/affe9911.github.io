@@ -203,7 +203,35 @@ div h2{ /* huvudrubrik liten */
     color: black;
     display: block;
 }
-
+fotter{
+	height: 100px;
+	width: 100%;
+	background-color: #2980b9;
+	color: black;
+	display: block;
+}
+fotter ul{
+	float: left;
+	line-height: 100px;
+}
+fotter ul li{
+	display: block;
+	float: left;
+	font-family: sans-serif;
+	margin-left: 10px;
+	font-size: 2vw;
+}
+fotter ul li button{
+	background-color: #03101d;
+	color: white;
+	width: auto;
+	margin-left: 20px;
+	line-height: 50px;
+	margin-top: 25px;
+	font-size: 2vw;
+	font-family: Myfont;
+	cursor: pointer;
+}
 @media screen and (max-width: 750px) { /* kod för mobilerna börjar här */
     *{
         margin: 0;
@@ -228,7 +256,7 @@ div h2{ /* huvudrubrik liten */
         text-shadow: none;
         top:65%;
     }
-    .white{
+    .blank{
         height: 100px;
     }
     .slider{

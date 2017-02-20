@@ -2,25 +2,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
-	<script src="script/shake.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#mix">Mixed</a></li>
-                <li><a href="#mama">YoMama</a></li>
-                <li><a href="#zombie">Zombie</a></li>
-                <li><a href="#best">Top5</a></li>
-            </ul>
-        </nav>
-		
-    <div id="top"> <!-- Rubrikruta -->
-        <h1>HAHA That´s Funny</h1>
-        <h2>Fun jokes for everyone</h2>  
-    </div>
+		<nav>
+			<ul>
+					<li><a><span onclick="openDiv()">Contact</span></a></li>
+					<li><a href="#mix">Mixed</a></li>
+					<li><a href="#mama">YoMama</a></li>
+					<li><a href="#zombie">Zombie</a></li>
+					<li><a href="#best">Top5</a></li>
+				</ul>
+		</nav>
+
+    	<div id="top"> <!-- Rubrikruta -->
+			<h1>HAHA That´s Funny</h1>
+			<h2>Fun jokes for everyone</h2>  
+		</div>
 		
     </header>
 	
@@ -103,17 +104,25 @@
         <img src="mixedjokes/joke4.jpg">
     </div>
 	
-	<fotter>
-		<ul>
-			<li>Kontakt:</li>
-			<li>Skapare: Alfred Widlöf</li>
-			<li>Mobil: 072 195 61 07</li>
-			<li>Mail:alfred.widlof@edu.solna.se</li>
-			<li><button><a href="mailto:alfred.widlof@edu.solna.se">Kontakta</a></button></li>
-		</ul>
-	</fotter>
+	<div id="Div" class="overlay">
+		<span class="close-btn" onclick="closeDiv()">&times;</span>	
+		<div>
+			<form action="mailto:alfred.widlof@edu.solna.se" method="post" ectype="text/plain">
+				<lable for="name">Name</lable>
+				<input type="text" id="name" class="contactinput" placeholder="Your name..">
+				<lable for="email">Email adress</lable>
+				<input type="text" id="email" class="contactinput" placeholder="Your email adress..">
+				<lable for="message">Message</lable>
+				<textarea id="message" class="contactinput" placeholder="Your message.."></textarea>
+				<input id="send-btn" onclick="closeDiv()" type="submit" value="Submit " name="Send">
+			</form>
+		</div>
+
+	</div>
 	
     <script src="script/slider.js"></script>
+	<script src="script/contact.js"></script>
+	<script src="script/clearform.js"></script>
 	
 </body>
 </html>

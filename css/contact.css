@@ -1,0 +1,63 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.overlay{ /* Bakgrunden till meny + inställningar för hur den åker fram */
+	height: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	background-color: #2980b9;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	transition: 0.5s;
+}
+form{ /* Positionering av innehåll på menyn */
+	background-color: #03101d;
+	color: white;
+	position: relative;
+	top: 25%;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+	text-align: center;
+	margin-top: 30px; /* Ser till så att stäng knappen får plats på mindre skärmar */
+	font-size: 2vw;
+	border-radius: 10px;
+	border: white solid 2px;
+}
+.contactinput{ /* textrutor*/
+	margin-left: auto;
+	margin-right: auto;
+	height: 30px;
+	margin-bottom: 30px;
+	width: 50%;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+textarea.contactinput{ /* textruta för meddelandet*/
+	height: 90px;
+	resize: none;
+}
+#send-btn{
+	background-color: #14405d;
+	color: white;
+	border: 2px solid white;
+	width: 25%;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	cursor: pointer;
+	
+}
+.close-btn{ /* Stäng meddelande ruta*/
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 5vw;
+	cursor: pointer;
+}

@@ -212,7 +212,6 @@ div h2{ /* huvudrubrik liten */
         padding: 0;
     }
     nav ul{
-        position: absolute;
         top: 0;
         display: inline-block;
         float: none;

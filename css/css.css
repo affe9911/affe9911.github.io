@@ -17,7 +17,7 @@ body{ /* inställningar för bakgrunden*/
 nav ul{ /* inställningar menyfält*/
     position: fixed;
     list-style-type: none;
-    font-size: 50px;
+    font-size: 4vw;
     float: right;
     top:0;
     right: 0;
@@ -216,7 +216,7 @@ div h2{ /* huvudrubrik liten */
         top: 0;
         display: inline-block;
         float: none;
-        font-size: 7vw;
+        font-size: 5vw;
     }
     #top{
         top: 0;
